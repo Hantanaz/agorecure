@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ticketPrice(age) {
+    if (age <= 12) {
+        return 10;
+    } else if (age >= 13 && age <= 17) {
+        return 15;
+    } else {
+        return 20;
+    }
+}
+
+// Exemple d'utilisation
+const age = parseInt(prompt("Entrez votre âge : "));
+const price = ticketPrice(age);
+console.log(Le prix du billet de cinéma est : ${price} $);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

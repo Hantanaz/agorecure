@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function isPalindrome(str) {
+    // Nettoyer la chaîne : enlever les espaces et la ponctuation, et mettre en minuscules
+    str = str.replace(/[^a-z0-9]/gi, '').toLowerCase();
+    
+    function checkPalindrome(s, start, end) {
+        if (start >= end) {
+            return true;
+        }
+        if (s[start] !== s[end]) {
+            return false;
+        }
+        return checkPalindrome(s, start + 1, end - 1);
+    }
+
+    return checkPalindrome(str, 0, str.length - 1);
+}
+
+// Exemple d'utilisation
+const input = prompt("Entrez une chaîne pour vérifier si c'est un palindrome : ");
+if (isPalindrome(input)) {
+    console.log("${input}" est un palindrome.);
+} else {
+    console.log("${input}" n'est pas un palindrome.);
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

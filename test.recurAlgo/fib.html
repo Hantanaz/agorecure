@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fibonacci(n) {
+    if (n === 0) {
+        return 0;
+    } else if (n === 1) {
+        return 1;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+// Exemple d'utilisation
+const n = parseInt(prompt("Entrez un nombre pour la séquence de Fibonacci : "));
+console.log(Le ${n}ème nombre de Fibonacci est : ${fibonacci(n)});
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
